@@ -2,7 +2,7 @@ var express = require('express'), http = require('http');
 var app = express();
 var AWS = require("aws-sdk");
 AWS.config.update({
-    region: "us-west-2"
+    region: "us-east-1"
 });
 app.get('/', function (req, res) {
     res.send('Wow - CI');
