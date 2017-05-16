@@ -24,7 +24,7 @@ app.get('/user/:userId/:promo', function (req, res) {
             res.send("Unable to read item. Error JSON:" + JSON.stringify(err, null, 2));
         } else {
             res.send("GetItem succeeded:" + JSON.stringify(data, null, 2));
-        }
+        } 
     });
 });
 app.listen(process.env.PORT, function () {
